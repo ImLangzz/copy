@@ -43,7 +43,7 @@
 
                         <div class="cta-group">
                             <a href="#play" class="btn btn-primary">Press Me!</a>
-                            <a href="https://discord.gg/mafiaps" target="_blank" rel="noreferrer" class="btn btn-secondary">Join Discord</a>
+                            <a href="https://discord.gg/bCp5F72mj " target="_blank" rel="noreferrer" class="btn btn-secondary">Join Discord</a>
                         </div>
 
                         <div class="hero-stats" aria-label="Server stats">
