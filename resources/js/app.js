@@ -27,6 +27,25 @@ const updateScrollState = () => {
 window.addEventListener('scroll', updateScrollState, { passive: true });
 updateScrollState();
 
+const platformFilters = [...document.querySelectorAll('.platform-filter')];
+const setupCards = [...document.querySelectorAll('.device-card[data-platform]')];
+
+platformFilters.forEach((button) => {
+	button.addEventListener('click', () => {
+		const selectedPlatform = button.dataset.platformFilter;
+
+		platformFilters.forEach((filter) => {
+			const isSelected = filter === button;
+			filter.classList.toggle('is-selected', isSelected);
+			filter.setAttribute('aria-pressed', String(isSelected));
+		});
+
+		setupCards.forEach((card) => {
+			card.hidden = selectedPlatform !== 'all' && card.dataset.platform !== selectedPlatform;
+		});
+	});
+});
+
 if (pageShell && !reduceMotion) {
 	window.addEventListener('pointermove', (event) => {
 		pageShell.style.setProperty('--pointer-x', `${event.clientX}px`);

@@ -3,8 +3,11 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>MafiaPS | Growtopia Private Server</title>
-        <meta name="description" content="MafiaPS is a private Growtopia server experience with community, custom worlds, active events, and trusted support.">
+        <title>MafiaPS | Enter a New World</title>
+        <meta name="description" content="Explore MafiaPS: custom worlds, player events, and a community made for your next adventure.">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
@@ -34,11 +37,10 @@
             <main id="home">
                 <section class="hero container">
                     <div class="hero-copy">
-                        <span class="eyebrow">Growtopia Private Server</span>
-                        <h1>Welcome To <span>Mafia Private Server</span></h1>
+                        <span class="eyebrow"><span class="status-light"></span> MPS NETWORK <span class="eyebrow-divider">/</span> LIVE 24·7</span>
+                        <h1>Your next world<br>starts <span>here.</span></h1>
                         <p>
-                            Discover exclusive features, meet incredible players from around the world,
-                            and dive into a community built for epic journeys and unforgettable experiences.
+                            Build beyond the ordinary. Find your crew, explore custom worlds, and make every session count.
                         </p>
 
                         <div class="cta-group">
@@ -48,16 +50,16 @@
 
                         <div class="hero-stats" aria-label="Server stats">
                             <div>
-                                <strong>19K+</strong>
-                                <span>members</span>
+                                <strong>22K<span>+</span></strong>
+                                <span>players in orbit</span>
                             </div>
                             <div>
                                 <strong>24/7</strong>
                                 <span>uptime</span>
                             </div>
                             <div>
-                                <strong>100%</strong>
-                                <span>community</span>
+                                <strong>08</strong>
+                                <span>ways to connect</span>
                             </div>
                         </div>
                     </div>
@@ -67,7 +69,7 @@
                         <div class="orb orb-two"></div>
                         <div class="visual-card">
                             <img src="{{ asset('images/mps-logo-independence.webp') }}" alt="MafiaPS official logo">
-                            <div class="badge-pill">PT MAFIA JAYA</div>
+                            <div class="badge-pill"><span class="status-light"></span> NODE STATUS <strong>ONLINE</strong></div>
                         </div>
                     </div>
                 </section>
@@ -75,33 +77,41 @@
                 <section id="play" class="section container">
                     <div class="section-heading">
                         <span class="section-tag">How to Play</span>
-                        <h2>Please select the application you want to use.</h2>
+                        <h2>Choose your launch path.</h2>
+                        <p class="section-intro">Eight routes into the MafiaPS universe. Pick your device to narrow the list.</p>
+                    </div>
+
+                    <div class="platform-filters" role="group" aria-label="Filter setup methods by platform">
+                        <button class="platform-filter is-selected" type="button" data-platform-filter="all" aria-pressed="true">All <span>08</span></button>
+                        <button class="platform-filter" type="button" data-platform-filter="desktop" aria-pressed="false">Desktop</button>
+                        <button class="platform-filter" type="button" data-platform-filter="android" aria-pressed="false">Android</button>
+                        <button class="platform-filter" type="button" data-platform-filter="apple" aria-pressed="false">Apple</button>
                     </div>
 
                     <div class="device-grid">
-                        <article class="device-card">
+                        <article class="device-card" data-platform="android">
                             <img class="device-icon" src="{{ asset('images/mps-logo-cube-independence.webp') }}" alt="MafiaPS mobile icon">
                             <h3>MafiaPS Mobile APK</h3>
                             <ol>
                                 <li>Uninstall Real Growtopia if you have it</li>
                                 <li>Restart your device (optional but recommended)</li>
-                                <li>Install <a href="https://www.mediafire.com/file/14ra2dutwtaay6l/MafiaPS_v5.57.apk/file" target="_blank" rel="noreferrer">MafiaPS APK</a></li>
+                                <li>Install <a href="https://www.mediafire.com/file/hshvjz0lwosqc76/MafiaPS-V5.58.apk/file" target="_blank" rel="noreferrer">MafiaPS APK</a></li>
                                 <li>Open MafiaPS APK use your MafiaPS account to login</li>
                             </ol>
                         </article>
 
-                        <article class="device-card">
+                        <article class="device-card" data-platform="desktop">
                             <img class="device-icon" src="{{ asset('images/mps-logo-cube-independence.webp') }}" alt="MafiaPS Windows icon">
                             <h3>MafiaPS Windows Installer</h3>
                             <ol>
                                 <li>Uninstall Real Growtopia if you have it</li>
-                                <li>Install <a href="https://www.mediafire.com/file/fjner4ty9qlj4ut/MafiaPS_Setup_v5.57.exe/file" target="_blank" rel="noreferrer">MafiaPS APK</a></li>
+                                <li>Install <a href="https://www.mediafire.com/file/uve21cbmzi6t38j/MafiaPS_v5.58_Setup.exe/file" target="_blank" rel="noreferrer">MafiaPS Windows Installer</a></li>
                                 <li>Open MafiaPS Installer MafiaPS account to login</li>
                                 <li>Wait until installing succes, then login MafiaPS account to login</li>
                             </ol>
                         </article>
 
-                        <article class="device-card">
+                        <article class="device-card" data-platform="desktop">
                             <img class="device-icon" src="{{ asset('images/mafiaps_windows.webp') }}" alt="Windows icon">
                             <h3>Windows</h3>
                             <ol>
@@ -112,7 +122,7 @@
                             </ol>
                         </article>
 
-                        <article class="device-card">
+                        <article class="device-card" data-platform="android">
                             <img class="device-icon" src="{{ asset('images/mafiaps_powertunnel.webp') }}" alt="PowerTunnel icon">
                             <h3>PowerTunnel (Android)</h3>
                             <ol>
@@ -123,7 +133,7 @@
                             </ol>
                         </article>
 
-                        <article class="device-card">
+                        <article class="device-card" data-platform="android">
                             <img class="device-icon" src="{{ asset('images/mafiaps_hostsgo.webp') }}" alt="Hosts Go icon">
                             <h3>Hosts Go (Android)</h3>
                             <ol>
@@ -134,7 +144,7 @@
                             </ol>
                         </article>
 
-                        <article class="device-card">
+                        <article class="device-card" data-platform="android">
                             <img class="device-icon" src="{{ asset('images/mafiaps_virtualhost.webp') }}" alt="Virtual Host icon">
                             <h3>Virtual Host (Android)</h3>
                             <ol>
@@ -146,7 +156,7 @@
                             </ol>
                         </article>
 
-                        <article class="device-card">
+                        <article class="device-card" data-platform="apple">
                             <img class="device-icon" src="{{ asset('images/mafiaps_apple.webp') }}" alt="Mac icon">
                             <h3>Mac</h3>
                             <ol>
@@ -156,7 +166,7 @@
                             </ol>
                         </article>
 
-                        <article class="device-card">
+                        <article class="device-card" data-platform="apple">
                             <img class="device-icon" src="{{ asset('images/mafiaps_surge5.webp') }}" alt="Surge5 icon">
                             <h3>Surge5 (iPhone)</h3>
                             <ol>
@@ -172,7 +182,7 @@
                     <div class="container">
                         <div class="section-heading center">
                             <span class="section-tag">Why Choose MPS?</span>
-                            <h2>Check out the awesome features that make our server the best choice.</h2>
+                            <h2>Built for players who make their own rules.</h2>
                         </div>
 
                         <div class="feature-grid">
@@ -239,7 +249,7 @@
                     </div>
 
                     <div class="about-media">
-                        <img src="https://www.growtopia.id/img/mps-logo-cube-independence.webp" alt="MafiaPS cube logo">
+                        <img src="{{ asset('images/mps-logo-cube-independence.webp') }}" alt="MafiaPS cube logo">
                     </div>
                 </section>
 
@@ -261,7 +271,7 @@
                 <section id="team" class="section container team-section">
                     <div class="section-heading center">
                         <span class="section-tag">Server Team</span>
-                        <h2>The architects of seamless server operations.</h2>
+                            <h2>The crew behind the chaos.</h2>
                     </div>
 
                     <div class="team-grid">
