@@ -6,7 +6,7 @@ foreach ([
     'CACHE_STORE' => 'array',
     'SESSION_DRIVER' => 'array',
     'QUEUE_CONNECTION' => 'sync',
-    'LOG_CHANNEL' => 'stderr',
+    'LOG_CHANNEL' => 'errorlog',
     'VIEW_COMPILED_PATH' => '/tmp/laravel-views',
     'APP_CONFIG_CACHE' => '/tmp/laravel-config.php',
     'APP_EVENTS_CACHE' => '/tmp/laravel-events.php',
