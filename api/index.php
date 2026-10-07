@@ -9,11 +9,9 @@ foreach ([
     'LOG_CHANNEL' => 'stderr',
     'VIEW_COMPILED_PATH' => '/tmp/laravel-views',
 ] as $name => $value) {
-    if (getenv($name) === false) {
-        putenv("{$name}={$value}");
-        $_ENV[$name] = $value;
-        $_SERVER[$name] = $value;
-    }
+    putenv("{$name}={$value}");
+    $_ENV[$name] = $value;
+    $_SERVER[$name] = $value;
 }
 
 $compiledViews = getenv('VIEW_COMPILED_PATH');
