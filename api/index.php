@@ -3,6 +3,7 @@
 foreach ([
     'APP_ENV' => 'production',
     'APP_DEBUG' => 'false',
+    'APP_MAINTENANCE_DRIVER' => 'file',
     'CACHE_STORE' => 'array',
     'SESSION_DRIVER' => 'array',
     'QUEUE_CONNECTION' => 'sync',
