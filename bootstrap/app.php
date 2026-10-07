@@ -14,7 +14,8 @@ return Application::configure(basePath: dirname(__DIR__))
         $middleware->trustProxies(at: '*');
     })
     ->withExceptions(function (Exceptions $exceptions): void {
-        $exceptions->report(function (\Throwable $exception): void {
+        $exceptions->report(function (\Throwable $exception): bool {
             error_log('[Laravel] '.$exception);
+            return false;
         });
     })->create();
