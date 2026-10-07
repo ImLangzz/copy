@@ -46,7 +46,7 @@ platformFilters.forEach((button) => {
 	});
 });
 
-if (pageShell && !reduceMotion) {
+if (pageShell && !reduceMotion && window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
 	window.addEventListener('pointermove', (event) => {
 		pageShell.style.setProperty('--pointer-x', `${event.clientX}px`);
 		pageShell.style.setProperty('--pointer-y', `${event.clientY}px`);

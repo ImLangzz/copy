@@ -90,7 +90,7 @@
 
                     <div class="device-grid">
                         <article class="device-card" data-platform="android">
-                            <img class="device-icon" src="{{ asset('images/mps-logo-cube-independence.webp') }}" alt="MafiaPS mobile icon">
+                            <img class="device-icon" src="{{ asset('images/mps-logo-cube-independence.webp') }}" alt="MafiaPS mobile icon" loading="lazy" decoding="async">
                             <h3>MafiaPS Mobile APK</h3>
                             <ol>
                                 <li>Uninstall Real Growtopia if you have it</li>
@@ -101,7 +101,7 @@
                         </article>
 
                         <article class="device-card" data-platform="desktop">
-                            <img class="device-icon" src="{{ asset('images/mps-logo-cube-independence.webp') }}" alt="MafiaPS Windows icon">
+                            <img class="device-icon" src="{{ asset('images/mps-logo-cube-independence.webp') }}" alt="MafiaPS Windows icon" loading="lazy" decoding="async">
                             <h3>MafiaPS Windows Installer</h3>
                             <ol>
                                 <li>Uninstall Real Growtopia if you have it</li>
@@ -112,7 +112,7 @@
                         </article>
 
                         <article class="device-card" data-platform="desktop">
-                            <img class="device-icon" src="{{ asset('images/mafiaps_windows.webp') }}" alt="Windows icon">
+                            <img class="device-icon" src="{{ asset('images/mafiaps_windows.webp') }}" alt="Windows icon" loading="lazy" decoding="async">
                             <h3>Windows</h3>
                             <ol>
                                 <li>Press Win+R → paste <code>C:\Windows\System32\drivers\etc</code></li>
@@ -123,7 +123,7 @@
                         </article>
 
                         <article class="device-card" data-platform="android">
-                            <img class="device-icon" src="{{ asset('images/mafiaps_powertunnel.webp') }}" alt="PowerTunnel icon">
+                            <img class="device-icon" src="{{ asset('images/mafiaps_powertunnel.webp') }}" alt="PowerTunnel icon" loading="lazy" decoding="async">
                             <h3>PowerTunnel (Android)</h3>
                             <ol>
                                 <li>Install <a href="https://android.izzysoft.de/repo/apk/io.github.krlvm.powertunnel.android" target="_blank" rel="noreferrer">PowerTunnel APK</a></li>
@@ -134,7 +134,7 @@
                         </article>
 
                         <article class="device-card" data-platform="android">
-                            <img class="device-icon" src="{{ asset('images/mafiaps_hostsgo.webp') }}" alt="Hosts Go icon">
+                            <img class="device-icon" src="{{ asset('images/mafiaps_hostsgo.webp') }}" alt="Hosts Go icon" loading="lazy" decoding="async">
                             <h3>Hosts Go (Android)</h3>
                             <ol>
                                 <li>Install <a href="https://www.mediafire.com/file/ctly08te3i8rlwq/%28No_root%29_Hosts_Go_2.1.9_Apkpure.apk/file" target="_blank" rel="noreferrer">Hosts Go (No Root)</a></li>
@@ -145,7 +145,7 @@
                         </article>
 
                         <article class="device-card" data-platform="android">
-                            <img class="device-icon" src="{{ asset('images/mafiaps_virtualhost.webp') }}" alt="Virtual Host icon">
+                            <img class="device-icon" src="{{ asset('images/mafiaps_virtualhost.webp') }}" alt="Virtual Host icon" loading="lazy" decoding="async">
                             <h3>Virtual Host (Android)</h3>
                             <ol>
                                 <li>Install <a href="https://www.apkshub.com/app/com.github.xfalcon.vhosts" target="_blank" rel="noreferrer">Virtual Host APK</a></li>
@@ -157,7 +157,7 @@
                         </article>
 
                         <article class="device-card" data-platform="apple">
-                            <img class="device-icon" src="{{ asset('images/mafiaps_apple.webp') }}" alt="Mac icon">
+                            <img class="device-icon" src="{{ asset('images/mafiaps_apple.webp') }}" alt="Mac icon" loading="lazy" decoding="async">
                             <h3>Mac</h3>
                             <ol>
                                 <li>Finder → Go → Go to Folder → <code>/private/etc/hosts</code></li>
@@ -167,7 +167,7 @@
                         </article>
 
                         <article class="device-card" data-platform="apple">
-                            <img class="device-icon" src="{{ asset('images/mafiaps_surge5.webp') }}" alt="Surge5 icon">
+                            <img class="device-icon" src="{{ asset('images/mafiaps_surge5.webp') }}" alt="Surge5 icon" loading="lazy" decoding="async">
                             <h3>Surge5 (iPhone)</h3>
                             <ol>
                                 <li>Install <a href="https://apps.apple.com/us/app/surge-5/id1442620678" target="_blank" rel="noreferrer">Surge5</a></li>
@@ -249,7 +249,7 @@
                     </div>
 
                     <div class="about-media">
-                        <img src="{{ asset('images/mps-logo-cube-independence.webp') }}" alt="MafiaPS cube logo">
+                        <img src="{{ asset('images/mps-logo-cube-independence.webp') }}" alt="MafiaPS cube logo" loading="lazy" decoding="async">
                     </div>
                 </section>
 
